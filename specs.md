@@ -49,3 +49,47 @@ the contents of a destination register will be overwritten with 0xffffffff;
 if not, the destination register will be overwritten with 0x00000000.
 
 * `REGISTER_1`, `REGISTER_2`, `DEST_REGISTER`: 3-bit register addresses.
+
+## 5: UNUSED
+
+## 6: UNUSED
+
+## 7: UNUSED
+
+## 8: UNUSED
+
+## 9: UNUSED
+
+## 10: READTWO
+`READTWO <MEMORY> <REGISTER>`
+
+Read two bytes from memory into a destination register address.
+
+* `MEMORY`: a 24-bit memory address
+* `REGISTER`: a 3-bit register address
+
+## 11: READTHREE
+`READTHREE <MEMORY> <REGISTER>`
+
+Read three bytes from memory into a destination register address.
+
+* `MEMORY`: a 24-bit memory address
+* `REGISTER`: a 3-bit register address
+
+## 12: WRITETWO
+`WRITETWO <REGISTER> <MEMORY>`
+
+Copy the lower two bytes of data from a register into a destination
+memory address.
+
+* `REGISTER`: a 3-bit register address
+* `MEMORY`: a 24-bit memory address
+
+## 13: WRITETHREE
+`WRITETHREE <REGISTER> <MEMORY>`
+
+Copy the three bytes of data from a register into a destination
+memory address.
+
+* `REGISTER`: a 3-bit register address
+* `MEMORY`: a 24-bit memory address

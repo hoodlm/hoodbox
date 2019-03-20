@@ -30,6 +30,15 @@ public class CommandExecutorBasicTests
     }
 
     @Test
+    public void writeTruncates() {
+        box.setRegister((short) 2, 257);
+        box.setMemory(1024, (short) 42);
+
+        executor.WRITE(2, 1024);
+        assertEquals(1, box.readMemory(1024));
+    }
+
+    @Test
     public void set() {
         executor.SET(3, 512);
         assertEquals(512, box.readRegister((short) 3));
