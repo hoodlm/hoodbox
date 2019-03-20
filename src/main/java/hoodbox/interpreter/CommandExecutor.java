@@ -7,7 +7,7 @@ import lombok.AllArgsConstructor;
 /**
  * Enacts commands against the java HoodBox implementation.
  */
-public class Interpreter {
+public class CommandExecutor {
     private static final int TRUE  = 0xffffff;
     private static final int FALSE = 0x0;
     private final HoodBox box;
